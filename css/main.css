@@ -244,7 +244,7 @@ header {
     padding-top: 40px;
 }
 
-.aboutus-block p {
+.aboutus-block__main-text {
     font-weight: 400;
     font-size: 22px;
     line-height: 150%;
@@ -266,15 +266,22 @@ header {
     width: 150px;
 }
 
-.aboutus-author-datta {
-    background-image: url("/img/Subtract.png");
-    background-repeat: no-repeat;
+.aboutus-author__datta {
+    /*background-image: url("/img/Subtract.png");*/
+    /*background-repeat: no-repeat;*/
+    position: relative;
     height: 197px;
     width: 425px;
     transform: translate(-10%, 3%);
 }
+.aboutus-author__datta-img {
+    position: absolute;
+    z-index: -2;
+    width: 425px;
+    height: 197px;
+}
 
-.aboutus-author-datta > * {
+.aboutus-author__datta > p , .aboutus-author__datta-link{
     text-align: start !important;
     margin-left: 80px;
     font-weight: 400;
@@ -282,10 +289,10 @@ header {
     line-height: 150%;
     letter-spacing: 0.05em;
     color: #264653;
-
 }
 
-.aboutus-author-datta :first-child {
+
+.aboutus-author__datta-name {
     margin-top: 30px;
     font-weight: 500;
     font-size: 26px;
